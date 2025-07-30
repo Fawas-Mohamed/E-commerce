@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Market</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>   
+<body>
     <div class="topnav">
-        <h1>Super Market</h1>
+        <h1>super market</h1>
         <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Submit</button>
-            </form>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
         </div>
-        <img src="login.png" alt="login">
-        <div class="nav-right">
-          <button title="Cart" class="search-btn">
+         <div class="nav-right">
+        <button title="Cart" >
         <svg viewBox="0 0 20 20"><path d="M6 2l1 2h8l3 7-1 2H6v-2h9L15 6H8L6 2z"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/></svg>
         <span class="badge">3</span>
        </button>
-         <button title="Wishlist" class="search-btn">
+         <button title="Wishlist">
         <svg viewBox="0 0 20 20"><path d="M10 18l-1.45-1.32C4.4 12.36 2 9.28 2 6a4 4 0 018 0 4 4 0 018 0c0 3.28-2.4 6.36-6.55 10.68L10 18z"/></svg>
-      </button>
-        <button class="search-btn" onclick="toggleSearch()" title="Search">
+       </button>
+        <button onclick="toggleSearch()" title="Search">
         <svg viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.386-1.414 1.415-4.387-4.387z"/></svg>
       </button>
-      </div>
-       
-     <nav class="navbar">
+    <img src="login.png" alt="login"></div>  </div>
+    <div class="navsec">
+    
     <div class="nav-left">
       <div class="dropdown">
-        <button id="cat-btn">
+      <button id="cat-btn">
           All Categories
           <svg viewBox="0 0 20 20"><path d="M5 8l5 5 5-5H5z"/></svg>
         </button>
@@ -42,8 +39,7 @@
           <a href="#">Home & Garden</a>
           <a href="#">Sports</a>
         </div>
-      </div>
-      
+        </div> 
       <div class="nav-links" id="main-nav">
         <a href="#">Home</a>
         <a href="#">Shop</a>
@@ -51,7 +47,7 @@
         <a href="#">Vendor</a>
         <a href="#">Our Blog</a>
       </div>
-    </div></nav>
- </div>
+    </div>
+  </div>  
 </body>
 </html>
