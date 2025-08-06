@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SuperMarket</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="topnav">
-        <h1>super market</h1>
+        <h1>Super Market</h1>
         <div class="search-container">
              <input type="text" placeholder="Search.." name="search">
              <button type="submit">Submit</button>
@@ -25,13 +25,15 @@
             <button onclick="toggleSearch()" title="Search">
                 <svg viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.386-1.414 1.415-4.387-4.387z"/></svg>
             </button>
-             <img src="login.png" alt="login">
+            <button>
+                <img src="user_9131521.png" alt="login" style="width: 25px;">
+            </button>
          </div>
     </div>
     <div class="navsec">
         <div class="nav-left">
             <div class="dropdown">
-                <button id="cat-btn">
+                <button id="cat-btn" onclick="myFunction()">
                     All Categories
                     <svg viewBox="0 0 20 20"><path d="M5 8l5 5 5-5H5z"/></svg>
                 </button>
@@ -50,6 +52,199 @@
                 <a href="#">Our Blog</a>
           </div>
        </div>
-     </div>  
+     </div>
+    <section class="split">
+    <div class="container">
+      <div class="slider">
+        <img class="active" src="grocery-delvery-services.png" alt="Image" style="top: 10px; "/>
+        <img src="delivery-concept-handsome-african-american-delivery-man-carrying-package-box-grocery-food-drink-from-store-isolated-grey-studio-background-copy-space.png" alt="Image" style="top: 90px;height: 700px;" />
+        <img src="1f9897fc-adb6-49d5-9125-45f997239919.png" alt="Image" style="bottom: 150px;"/>
+        <img src="healthy-groceries-bag-66eaef810acf6.png" alt="Image" style="top: 80px; height: 640px;" />
+      </div>
+      <div class="navigation-button" id="navButtons"></div>
+    </div>    
+    <p style="line-height: 3;margin-top: 30px; ">Online WholeSale and Retail</p>
+    <h1 style="line-height:1;">Fresh Quality Product</h1>
+    <h1 style="line-height: 2;  color:rgb(16, 194, 16);"> Make a Best Life</h1>
+    <p style="line-height: 1;">Shopping With us </p>
+    <p style="line-height: 3;">Get Promation and Discounts</p>
+    <button>Shop Now</button>
+  </section>
+  <div class="topcate">
+    <div class="header">
+      <h1">Top Categories</h1>
+    </div>
+  </div>
+  <section class="best-deals left">
+    <img src="pngwing.com.png" alt="veg image">
+  </section>
+  <div class="container swiper" style=" display: flex; justify-content: right; margin: -70px 0 0;">
+    <div class="cards">
+      <ul class="card_list swiper-wrapper" >
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="pomme-large.png" alt="card image" class="cardimage" style="background:rgba(245, 22, 70, 0.132);">
+            <p class="badge">FreshFruits</p>
+            <button class="material-symbols-rounded">
+              arrow_forward
+            </button>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="Sandwich-White.png" alt="card image" class="cardimage" style="background:rgba(241, 162, 4, 0.481);">
+            <p class="badge">Bakery</p>
+            <button class="material-symbols-rounded">
+              arrow_forward
+            </button>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="istockphoto-505207430-612x612.png" alt="card image" class="cardimage" style="background:rgba(36, 2, 2, 0.111);">
+            <p class="badge">Meets</p>
+            <button class="material-symbols-rounded">
+              arrow_forward
+            </button>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="pngtree-cleaning-items-set-clean-picture-image_13267511.png" alt="card image" class="cardimage" style="background:rgba(4, 12, 241, 0.507);">
+            <p class="badge">Cleanning</p>
+            <button class="material-symbols-rounded">
+              arrow_forward
+            </button>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="Grocery-Bundle-9a.png" alt="card image" class="cardimage" style="background:rgba(237, 241, 4, 0.589);">
+            <p class="badge">Grocery</p>
+            <button class="material-symbols-rounded">
+              arrow_forward
+            </button>
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <div class="best-deals">
+    <div class="header">
+      <h2>Offer's Deals</h2>
+    </div>
+  </div>
+  <div class="contaionr"style="display: flex; justify-content: right; margin: 150px 0 0;">
+    <div class="cards ">
+      <ul class="card_list swiper-wrapper" >
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="mixedfruitdrink.png" alt="card image" class="cardimage">
+            <div class="title">A refreshing and delicious beverage</div>
+            <div class="price">
+              <div class="sale">$1,89.00</div>
+              <div class="orig">$1,99.00</div>
+            </div>
+            <div class="rating">
+              ★★☆☆☆ <div class="count">(2)</div>
+            </div>
+            <div class="progress-wrap">
+              <div class="bar">
+                <div class="bar-inner" style="width: 30%;"></div>
+              </div>
+              <div>20 Sold</div>
+            </div>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="51jZSlhvJrL.png" alt="card image" class="cardimage">
+            <div class="title">Contribute to weight gain, increase the risk of diabetes </div>
+            <div class="price">
+              <div class="sale">$105.00</div>
+              <div class="orig">$80.05</div>
+            </div>
+            <div class="rating">
+              ★★★★☆ <div class="count">(4)</div>
+            </div>
+            <div class="progress-wrap">
+              <div class="bar">
+                <div class="bar-inner" style="width: 95%;"></div>
+              </div>
+             <div>180 Sold</div>
+            </div>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="Category-Smoothies_69cc7573-1151-4ae5-bc1d-452566bb8cff.png" alt="card image" class="cardimage">
+            <div class="title">Smoothies with some fruit juice – heigh suger</div>
+            <div class="price">
+              <div class="sale">$250.00</div>
+              <div class="orig">$220.00</div>
+            </div>
+            <div class="rating">
+             ★★★★☆ <div class="count">(4)</div>
+            </div>
+            <div class="progress-wrap">
+              <div class="bar">
+                <div class="bar-inner" style="width: 75%;"></div>
+              </div>
+              <div>45 Sold</div>
+            </div>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="liquid-coconut-oil-olivado-250.png" alt="card image" class="cardimage">
+            <div class="title">Organic Tender Coconut oil - Organic</div>
+            <div class="price">
+              <div class="sale">$300.00</div>
+              <div class="orig">$215.05</div>
+            </div>
+            <div class="rating">
+              ★★★☆☆ <div class="count">(3)</div>
+            </div>
+            <div class="progress-wrap">
+              <div class="bar">
+                <div class="bar-inner" style="width: 55%;"></div>
+              </div>
+              <div>60 Sold</div>
+            </div>
+          </a>
+        </li>
+        <li class="cardiltem swiper-slide">
+          <a href="#" class="cardlink">
+            <img src="59737343_2313167952056080_4532179353370361856_o.png" alt="peanut"class="cardimage" >
+            <div class="title">Coriander Leaves With Roots – Enhances Flavour</div>
+            <div class="price">
+              <div class="sale">$180.00</div>
+              <div class="orig">$130</div>
+            </div>
+            <div class="rating">
+              ★★★★☆ <div class="count">(4)</div>
+            </div>
+            <div class="progress-wrap">
+              <div class="bar">
+                <div class="bar-inner" style="width: 80%;"></div>
+              </div>
+              <div>120 Sold</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination">
+    </div>
+    <div class="swiper-slide-button swiper-button-prev"></div>
+    <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <button class="all-btn">All Products</button>
 </body>
 </html>
