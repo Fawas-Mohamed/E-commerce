@@ -6,7 +6,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color:#e9e9e9;
+  background-color: #ececec;
+  align-items: center;
+  justify-content: center;
 }
 
 .topnav {
@@ -23,7 +25,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .topnav input[type="text"] {
   padding: 0.3rem 6rem;
   font-size: 18px;
@@ -40,13 +41,11 @@ body {
   background: #ddd;
   cursor: pointer;
 }
-
 .nav-right {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-
 .nav-right button {
   background: none;
   border: none;
@@ -79,67 +78,346 @@ body {
   justify-content: space-between;
   background-color:white;
   border-bottom: 1px solid #e2e8f0;
-  
   width: 100%;
- 
 }
-    .nav-left {
-      display:flex;
-      
-      gap: 3rem;    
-    }
-    
-    .dropdown > button {
-      background: #f3f4f6;
-      border: none;
-      padding: 0.5rem 2rem;
-      display: flex;
-      cursor: pointer;
-      border-radius: 4px;
-      margin-top: 50px;
-      position: relative;
-      
-      
-    }
-    .dropdown > button svg {
-      width: 0.75rem;
-      height: 0.75rem;
-      fill: #4a5568;
-    }
-    .dropdown-menu {
-      position:absolute;
-      top: 110%;
-      left: 0;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      border-radius: 4px;
-      overflow: hidden;
-      display: none;
-      min-width: 200px;
-      z-index: 10;
-    }
-    .dropdown-menu a {
-      display: block;
-      padding: 0.5rem 1rem;
-      color: #2d3748;
-      text-decoration: none;
-    }
-    .dropdown-menu a:hover {
-      background: #f7fafc;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap:  3rem;
-      margin-top: 45px;
-      
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: #4a5568;
-      padding: 0.5rem;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover {
-      color: #2b6cb0;
-    }
+.navsec .nav-left {
+  display:flex;
+  gap: 3rem;    
+} 
+.navsec .dropdown {
+  position: relative;
+}
+.navsec .dropdown > button {
+  background: #f3f4f6;
+  border: none;
+  padding: 0.5rem 2rem;
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 50px;
+  position: relative;   
+}
+.navsec .dropdown > button svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: #4a5568;
+}
+.navsec .dropdown-menu {
+  position:absolute;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  display: none;
+  min-width: 200px;
+  z-index: 10;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #2d3748;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+   background: #f7fafc;
+}
+.nav-links {
+   display: flex;
+   align-items: center;
+   gap:  3rem;
+   margin-top: 45px;
+}
+.navsec .nav-links a {
+   text-decoration: none;
+   color: #4a5568;
+   padding: 0.5rem;
+   transition: color 0.2s;
+}
+.navsec .nav-links a:hover {
+   color: #2b6cb0;
+}
+.split{
+  background:linear-gradient(to bottom right,#ececec 50%,rgb(16, 194, 16) 50%);
+  height: 89vh;
+  width: 100%;
+}
+.split button{
+  display:flex;
+  padding: 4px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #101010;
+  font-weight: bold;
+  background-color:rgb(248, 248, 55);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+  margin-left: 60px;
+}
+.split button:hover {
+  background-color: #ed7e2f
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.split .container {
+  width: 50%;
+  position:absolute;
+  margin-left: 760px;
+  margin-top: -50px;
+}
+.split .slider {
+    width: 100%;
+    height: 700px;
+    border-radius: 15px;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    display: flex;  
+}
+.split .slider img {
+    width: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.split .slider img.active {
+    opacity: 1;
+    transform: translateX(0);    
+}
+@media (max-width: 890px) {  
+}
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+.split p{
+  margin-left: 60px;
+}
+.split h1{
+  margin-left: 60px;
+  font-size:45px;
+}
+.topcate .header h1 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.topcate .header::after {
+  content: "TOP CATEGORIES";
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(19, 25, 36, 0.05);
+  top: -40px;
+  left: 70%;  
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.topcate .header {
+  position: relative;
+  font-size:35px;
+  text-align: center;
+  line-height: 5; 
+  margin-left: -270px;
+}
+.best-deals{
+  height: 120%;
+  width: 40%;
+  position:absolute; 
+}
+.right{
+    right: 0;
+}
+.left{
+  left: 0;
+  background-color: rgb(16, 194, 16);
+  clip-path: polygon(0 0,100% 0%,80% 100%,0% 100%);
+}
+.left img{
+  width: 550px;
+  height: 650px;
+  transform: rotate(25deg);
+  position: absolute;
+  bottom: -40px;
+  left: -60px;
+  display: flex;
+}
+.cards{
+  max-width: 1200px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden; 
+}
+.card_list .cardiltem{
+  list-style:none;
+}
+.card_list .cardiltem .cardlink{
+  user-select: none;
+  display: block;
+  background:white;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid transparent; 
+  box-shadow: 0px 10px 10px #5d5959;
+  transition: 0.2s ease;
+}
+.card_list .cardiltem .cardlink:active{
+  cursor: grabbing;
+}
+.card_list .cardlink .cardimage{
+  width: 100%;
+}
+.card_list .cardlink .badge{
+  color: black;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 258px 80px 0px;
+  background: rgb(16, 194, 16);
+  width: fit-content;
+  border-radius: 20px;
+}
+.card_list .cardlink .material-symbols-rounded{
+  height: 35px;
+  width: 35px;
+  color: rgb(16, 194, 16);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border:3px solid rgb(14, 13, 13);
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+.card_list .cardlink:hover .material-symbols-rounded{
+  color:rgb(5, 97, 5);
+  background: yellow;
+}
+.cards .swiper-pagination-bullet{
+  height: 10px;
+  width: 10px;
+  opacity: 0.1;
+  background: rgb(16, 194, 16);
+}
+.cards .swiper-pagination-bullet-active{
+  opacity: 1;
+}
+.cards .swiper-slide-button{
+  color: rgb(16, 194, 16);
+  margin-top: -35px;
+}
+@media screen and(max-width:768px){
+  .classs{
+    margin: 0 10px 25px;
+  }
+ .classs .swiper-slide-bullet{
+  display: none;
+ }
+}
+.cardlink img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  height: 200px;
+  border-radius:50% ;
+}
+.cardlink .title {
+  font-weight: 300;
+  font-size: 1rem;
+  flex-grow: 1;
+  color: #000;
+}
+.cardlink .price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.cardlink .price .sale {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e53e3e;
+  margin-top: 10px;
+}
+.cardlink .price .orig {
+  font-size: 0.9rem;
+  color: #64748b;
+  text-decoration: line-through;
+}
+.cardlink .rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  color: #facc15;
+  margin-top: 10px; 
+}
+.cardlink .rating .count {
+  margin-left: auto;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.cardlink .progress-wrap {      
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+.cardlink .progress-wrap .bar {
+  flex-grow: 1;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 25px;    
+}
+.cardlink .progress-wrap .bar-inner {
+  height: 100%;
+  width: 60%; 
+  background: #10b981; 
+}
+.best-deals .header {
+  position: relative;
+  text-align: center;
+  top: 70px;
+  left: 110%;
+}
+.best-deals .header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.best-deals .header::after {
+  content: "Deals";
+  position: absolute;
+  font-size: 9rem;
+  font-weight: bold;
+  color: rgba(30,41,59,0.05);
+  top: -50px;
+  left: 100%;
+  transform: translateX(-50%);
+  pointer-events: none;  
+}
+.all-btn{
+  padding: 0.3rem 2.5rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 14px;
+  background: #0f0f0f;
+  cursor: pointer;
+  color: white;
+  margin-left: 1250px;
+}
