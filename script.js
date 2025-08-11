@@ -40,17 +40,16 @@ let navButtonsContainer = document.getElementById('navButtons');
 let prevButton = document.getElementById('prevButton');
 let nextButton = document.getElementById('nextButton');
 let currentImg = 0;
-const interval = 4000; // time for automatic slide transition
+const interval = 4000; 
 
 function changeSlide(n) {
-    // Remove active classes from current image and nav button
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].classList.remove('active', 'previous');
         navButtonsContainer.children[i].classList.remove('active');
     }
 
     let previousImg = currentImg;
-    currentImg = (n + imgs.length) % imgs.length; // Wrap around
+    currentImg = (n + imgs.length) % imgs.length; 
 
     imgs[currentImg].classList.add('active');
     imgs[previousImg].classList.add('previous');
@@ -58,7 +57,6 @@ function changeSlide(n) {
 }
 
 function setupNavButtons() {
-    // Create navigation dots
     for (let i = 0; i < imgs.length; i++) {
         let button = document.createElement('span');
         button.classList.add('line');
@@ -66,11 +64,8 @@ function setupNavButtons() {
         navButtonsContainer.appendChild(button);
     }
 
-    // Set the initial active state
     navButtonsContainer.children[currentImg].classList.add('active');
 }
-
-// Initialize navigation dots
 setupNavButtons();
 
 let timer = setInterval(function () {
