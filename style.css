@@ -422,3 +422,71 @@ button:active {
   color: white;
   margin-left: 1250px;
 }
+.discountcontainer{
+  margin-top: 100px;
+  width: 100%;
+}
+.discountcontainer .deals{
+  margin-left:65px ;
+  position: relative;
+}
+.discountcontainer .deals h2{
+  font-size: 2.5rem;
+}
+.discountcontainer .deals ::after{
+  content: "Discounts";
+  position: absolute;
+  font-size:9rem ;
+  font-weight: bold;
+  color:rgba(30,41,59,0.05);
+  transform: translateX(-50%);
+  pointer-events:none;
+  top: -70%;
+  left: 25%;
+}
+.discountcontainer .discountslide{
+  list-style:none;
+  padding: 25px;
+  margin-top: 60px;
+  margin-left: 70px;
+   
+}
+.discountslide .discount{
+  user-select: none;
+  display: block;
+  background:rgb(180, 237, 180);
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid transparent; 
+  box-shadow: 0px 10px 10px #5d5959;
+  transition: 0.2s ease;
+  height: 600px;
+  width:650px;
+  overflow: hidden; 
+} 
+.discount .discountimage{
+  width: 600px;
+  height: 700px;
+  margin-top: -150px;
+  display: flex;
+  margin-left: 50px;
+}
+.discount p{
+  font-size: 1.2rem;
+  margin-left: 25px;
+}
+.discount h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.discount button{
+  border: none;
+  border-radius: 12px;
+  background: rgb(16, 194, 16);
+  padding: 6px 12px 6px 12px;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 30px;
+}
