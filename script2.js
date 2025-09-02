@@ -22,7 +22,7 @@ function fruFunction() {
   location.replace("fruits.html")
 }
 function allFunction() {
-  location.replace("allproducts.html")
+  location.replace("allproduct.html")
 }
 function aboutfunction() {
   location.replace("aboutus.html")
