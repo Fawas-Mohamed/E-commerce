@@ -47,11 +47,11 @@
                 </div>
             </div>
             <div class="nav-links" id="main-nav">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Hot Sale</a>
-                <a href="#">Vendor</a>
-                <a href="#">Our Blog</a>
+                <a href="index.html">Home</a>
+                <a href="allproduct.html">Shop</a>
+                <a href="offers.html">Hot Sale</a>
+                <a href="aboutus.html">Our Blog</a>
+                <a href="aboutus.html">About Us</a>
           </div>
        </div>
      </div>
@@ -72,7 +72,7 @@
     <h1 style="line-height: 2;  color:rgb(16, 194, 16);"> Make a Best Life</h1>
     <p style="line-height: 1;">Shopping With us </p>
     <p style="line-height: 3;">Get Promation and Discounts</p>
-    <button>Shop Now</button>
+    <button onclick="allFunction()">Shop Now</button>
   </section>
   <div class="topcate">
     <div class="header">
@@ -89,7 +89,7 @@
           <a href="#" class="cardlink">
             <img src="assets/apple1.png" alt="card image" class="cardimage" style="background:rgba(245, 22, 70, 0.132);">
             <p class="badge">FreshFruits</p>
-            <button class="material-symbols-rounded">
+            <button class="material-symbols-rounded" onclick="fruFunction()">
               arrow_forward
             </button>
           </a>
@@ -98,7 +98,7 @@
           <a href="#" class="cardlink">
             <img src="assets/bread1.png" alt="card image" class="cardimage" style="background:rgba(241, 162, 4, 0.481);">
             <p class="badge">Bakery</p>
-            <button class="material-symbols-rounded">
+            <button class="material-symbols-rounded" onclick="bakeryFunction()">
               arrow_forward
             </button>
           </a>
@@ -107,16 +107,16 @@
           <a href="#" class="cardlink">
             <img src="assets/meat1.png" alt="card image" class="cardimage" style="background:rgba(36, 2, 2, 0.111);">
             <p class="badge">Meets</p>
-            <button class="material-symbols-rounded">
+            <button class="material-symbols-rounded" onclick="meetFunction()">
               arrow_forward
             </button>
           </a>
         </li>
         <li class="cardiltem swiper-slide">
           <a href="#" class="cardlink">
-            <img src="assets/cleaningitem1.png" alt="card image" class="cardimage" style="background:rgba(4, 12, 241, 0.507);">
-            <p class="badge">Cleanning</p>
-            <button class="material-symbols-rounded">
+            <img src="vegetables/vege16.png" alt="card image" class="cardimage" style="background:rgba(36, 241, 4, 0.642);">
+            <p class="badge">Vegetables</p>
+            <button class="material-symbols-rounded" onclick="mFunction()">
               arrow_forward
             </button>
           </a>
@@ -125,7 +125,7 @@
           <a href="#" class="cardlink">
             <img src="assets/Grocery-Bundle-9a.png" alt="card image" class="cardimage" style="background:rgba(237, 241, 4, 0.589);">
             <p class="badge">Grocery</p>
-            <button class="material-symbols-rounded">
+            <button class="material-symbols-rounded" onclick="allFunction()">
               arrow_forward
             </button>
           </a>
@@ -249,7 +249,7 @@
   </div>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <button class="all-btn">All Products</button>
+  <button class="all-btn" onclick="allFunction()">All Products</button>
    <div class="discountcontainer">
     <div class="deals">
       <h2>Best Deals</h2>
