@@ -212,6 +212,44 @@ body {
     margin-left: 80px;
     position: relative;
 }
+.cards-grid-container {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:5rem;
+    padding: 1.5rem;
+}
+
+.mc-card {
+    --mc-card-radius: 12px;
+    --mc-card-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    background-color: #ffffff;
+    border-radius: var(--mc-card-radius);
+    box-shadow: var(--mc-card-shadow);
+    padding: 1.5rem;
+}
+
+.mc-card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin: 0 0 0.5rem;
+}
+
+.mc-card-figure {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.mc-chart-container {
+    position: relative;
+    margin-top: 1.5rem;
+    height: 120px;
+}
 .newsletters{
   width: 100%;
   margin-top: -300px;
