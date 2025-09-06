@@ -124,7 +124,7 @@ body {
   text-decoration: none;
 }
 .dropdown-menu a:hover {
-   background: #f7fafc;
+   background: #22b315;
 }
 .nav-links {
    display: flex;
@@ -139,7 +139,7 @@ body {
    transition: color 0.2s;
 }
 .navsec .nav-links a:hover {
-   color: #2b6cb0;
+   color: #48b02b;
 }
 .split{
   background:linear-gradient(to bottom right,#ececec 50%,rgb(16, 194, 16) 50%);
