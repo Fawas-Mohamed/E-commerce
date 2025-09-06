@@ -27,3 +27,6 @@ function allFunction() {
 function aboutfunction() {
   location.replace("aboutus.html")
 }
+function loginFunction(){
+  location.replace("login.html")
+}
