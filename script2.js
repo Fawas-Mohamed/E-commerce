@@ -30,3 +30,6 @@ function aboutfunction() {
 function loginFunction(){
   location.replace("login.html")
 }
+function cartFunction(){
+  location.replace("cart.html")
+}
